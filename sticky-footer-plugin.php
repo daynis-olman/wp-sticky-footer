@@ -27,31 +27,33 @@ function sticky_footer_plugin_scripts() {
         </a>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var callNowButton = document.getElementById('call-now-button');
-            var bookAssessmentButton = document.getElementById('book-assessment-button');
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var callNowButton = document.getElementById('call-now-button');
+        var bookAssessmentButton = document.getElementById('book-assessment-button');
 
-            callNowButton.addEventListener('click', function() {
-                gtag('event', 'click', {
-                    'event_category': 'Button',
-                    'event_label': 'Call Now'
-                });
+        callNowButton.addEventListener('click', function() {
+            gtag('event', 'click', {
+                'event_category': 'Button',
+                'event_label': 'Call Now'
             });
-
-            bookAssessmentButton.addEventListener('click', function() {
-                gtag('event', 'click', {
-                    'event_category': 'Button',
-                    'event_label': 'Book Assessment'
-                });
-            });
-
-            // Only show the footer on mobile devices
-            if (window.innerWidth <= 767) {
-                document.getElementById('sticky-footer-container').style.display = 'flex';
-            }
+            console.log('Success: Event logged for "Call Now" button click');
         });
-    </script>
+
+        bookAssessmentButton.addEventListener('click', function() {
+            gtag('event', 'click', {
+                'event_category': 'Button',
+                'event_label': 'Book Assessment'
+            });
+            console.log('Success: Event logged for "Book Assessment" button click');
+        });
+
+        // Only show the footer on mobile devices
+        if (window.innerWidth <= 767) {
+            document.getElementById('sticky-footer-container').style.display = 'flex';
+        }
+    });
+</script>
     <?php
 }
 
