@@ -9,7 +9,7 @@
 function sticky_footer_plugin_scripts() {
     ?>
     <!-- Sticky Footer HTML -->
-    <div id="sticky-footer-container" style="display: none; position: fixed; left: 0; bottom: 0; width: 100%; justify-content: center; align-items: center; padding: 0 10px; background-color: #333;">
+    <div id="sticky-footer-container" style="display: none; position: fixed; left: 0; bottom: 0; width: 100%; justify-content: center; align-items: center; padding: 0 10px; background-color: #333; z-index: 10000;">
         <a href="tel:+14165193599" class="sticky-footer__button" id="call-now-button" style="text-decoration: none; color: white; background-color: #009900; font-weight: 600; text-align: center; border-radius: 5px; display: flex; justify-content: center; align-items: center; height: 60px; padding: 0 15px; font-family: 'Roboto', Sans-serif;">
             <!-- SVG for Call Now -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="sticky-footer__icon" style="height: 24px; width: 24px; margin-right: 8px;">
