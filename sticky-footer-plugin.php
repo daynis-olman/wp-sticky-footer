@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Sticky Phone call & Book Assessment Footer
- * Description: A simple plugin to add a sticky footer to the WordPress site.
+ * Description: This plugin adds custom-made sticky footer on mobile devices only. The footer is to be displayed across all pages and display "Call us" & "Book free assessment" buttons. Click interactions for both buttons are sent to Google analytics using gtag.js
  * Version: 1.0
  * Author: Daynis Olman
  */
